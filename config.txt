@@ -1,0 +1,1 @@
+sudo pacman -Syu neovim nodejs npm ufw kitty alacritty python-pip 
