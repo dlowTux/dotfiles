@@ -65,4 +65,11 @@ sudo cp colorscript.sh /usr/bin/colorscript
 sudo cp zsh_completion/_colorscript /usr/share/zsh/site-functions
 
 ```
+## Wallpapers 🐻
+```
+git clone https://github.com/antoniosarosi/Wallpapers.git
+git clone https://github.com/dlowTux/wallpapers.git
+git clone https://gitlab.com/dwt1/wallpapers.git
+```
+
 
