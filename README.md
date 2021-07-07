@@ -72,4 +72,11 @@ git clone https://github.com/dlowTux/wallpapers.git
 git clone https://gitlab.com/dwt1/wallpapers.git
 ```
 
+## Neovim 👽
+[See here my config and Keybindings](https://github.com/dlowTux/nvim)
+Use my configs for kitty 
+```
+ cd ~/.config 
+git clone https://github.com/dlowTux/nvim.git
+```
 
