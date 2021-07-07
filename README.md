@@ -25,6 +25,21 @@ Turn on some services ⚡
 sudo systemctl enable ufw --now
 
 ```
+# Shell and terminals 💻
+Download NerdFonts from https://www.nerdfonts.com/font-downloads
+I use  <a hrfc="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip"> CaskaydiaCove Nerd Font </a>
+Dowload it and run the following comands
+```
+unzip name_file
+sudo mv *.ttf /usr/share/fonts/
+```
+## Kitty 🐱
+Use my configs for kitty 
+```
+ cd ~/.config 
+git clone https://github.com/dlowTux/kitty.git
+```
+
 ## Change the default shell 👻
 ```
 chsh -s $(which zsh)
