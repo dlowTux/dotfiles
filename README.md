@@ -76,7 +76,12 @@ git clone https://gitlab.com/dwt1/wallpapers.git
 [See here my config and Keybindings](https://github.com/dlowTux/nvim)
 Use my configs for kitty 
 ```
+sudo npm install yarn -g
  cd ~/.config 
 git clone https://github.com/dlowTux/nvim.git
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+ 
+
 ```
 
