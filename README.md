@@ -1,6 +1,6 @@
-# dotfiles
-[![Build Status](https://github.com/kubernetes/kube-state-metrics/workflows/continuous-integration/badge.svg)](https://github.com/kubernetes/kube-state-metrics/actions)
-[![Go Report Card](https://goreportcard.com/badge/github.com/kubernetes/kube-state-metrics)](https://goreportcard.com/report/github.com/kubernetes/kube-state-metrics) [![GoDoc](https://godoc.org/github.com/kubernetes/kube-state-metrics?status.svg)](https://godoc.org/github.com/kubernetes/kube-state-metrics)
+# Dotfiles
+[![Fedora](https://start.fedoraproject.org/)](https://getfedora.org/es/)
+[![Debian ](https://www.debian.org/)](https://www.debian.org/distrib/) [![Testing](https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-dvd/)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/)
 
 My dotfiles repo, here you can find all my window manager configs as well as documentation and a guide on how to make your own desktop environment. 
 # Arch Linux
