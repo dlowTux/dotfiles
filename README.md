@@ -74,7 +74,7 @@ git clone https://gitlab.com/dwt1/wallpapers.git
 
 ## Neovim 👽
 [See here my config and Keybindings](https://github.com/dlowTux/nvim)
-Use my configs for kitty 
+Use my configs for Neovim 
 ```
 sudo npm install yarn -g
  cd ~/.config 
