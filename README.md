@@ -26,14 +26,16 @@ sudo systemctl enable ufw --now
 
 ```
 # Shell and terminals 💻
-Download NerdFonts from https://www.nerdfonts.com/font-downloads
-I use  <a hrfc="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip"> CaskaydiaCove Nerd Font </a>
+- Download  [NerdFonts](https://www.nerdfonts.com/font-downloads) 
+- I use  [CascadiaCode](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip)   
+
 Dowload it and run the following comands
 ```
 unzip name_file
 sudo mv *.ttf /usr/share/fonts/
 ```
 ## Kitty 🐱
+[See here my config and Keybindings 🐱](https://github.com/dlowTux/kitty)
 Use my configs for kitty 
 ```
  cd ~/.config 
