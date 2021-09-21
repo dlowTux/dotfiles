@@ -132,5 +132,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#Neovim
+alias vi="nvim"
+colorscript random
+
 colorscript random
 eval "$(starship init zsh)"
