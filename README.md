@@ -1,11 +1,5 @@
 # Dotfiles and Configs 🐧
-```
- ____  _               _____           
-|  _ \| | _____      _|_   _|   ___  __
-| | | | |/ _ \ \ /\ / / | || | | \ \/ /
-| |_| | | (_) \ V  V /  | || |_| |>  < 
-|____/|_|\___/ \_/\_/   |_| \__,_/_/\_\
-```                                      
+<img src="https://i.postimg.cc/5N6FNXQv/thumb-1920-108672.gif" width="200" height="200">                                   
 
 My dotfiles repo, here you can find all my window manager configs as well as documentation and a guide on how to make your own desktop environment. 
 # Overview 🤖
