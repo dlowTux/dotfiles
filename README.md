@@ -6,7 +6,7 @@ My dotfiles repo, here you can find all my window manager configs as well as doc
 
 This guide will walk you through the process of building a desktop environment starting with a fresh Fedora based installation. I will assume that you are comfortable with Linux based operating systems and command line interfaces. Because you are reading this, I will also assume that you've looked through some "tiling window manager" videos on Youtube, because that's where the rabbit hole starts. You can pick any window managers you want, but I'm going to use Gnome to setup for the basic install. This is basically a description of how I made my desktop environment from scratch.
 
-# Fedora Installation 😜
+# Debian Installation 😜
 Before of the installation of fedora you must run the following commands
 ```
 sudo dnf update -y  && sudo dnf upgrade -y
