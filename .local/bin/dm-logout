@@ -1,0 +1,44 @@
+#!/bin/bash
+
+declare -a options=(
+    "Reboot"
+    "Shutdown"
+    "Suspend"
+    "Quit"
+    )
+
+ choice=$(printf '%s\n' "${options[@]}" | rofi -show -dmenu 'Shutdown menu:' "${@}")
+
+case $choice in
+       
+        'Reboot')
+            if [[ "$(echo -e "No\nYes" | rofi -show -dmenu "${choice}?" "${@}" )" == "Yes" ]]; then
+                systemctl reboot
+            else
+                output "User chose not to reboot." && exit 0
+            fi
+            ;;
+        'Shutdown')
+            if [[ "$(echo -e "No\nYes" | rofi -show -dmenu "${choice}?" "${@}" )" == "Yes" ]]; then
+                systemctl poweroff
+            else
+                output "User chose not to shutdown." && exit 0
+            fi
+            ;;
+        'Suspend')
+            if [[ "$(echo -e "No\nYes" | rofi -show -dmenu "${choice}?" "${@}" )" == "Yes" ]]; then
+                systemctl suspend
+            else
+                output "User chose not to suspend." && exit 0
+            fi
+            ;;
+        'Quit')
+            output "Program terminated." && exit 0
+        ;;
+        # It is a common practice to use the wildcard asterisk symbol (*) as a final
+        # pattern to define the default case. This pattern will always match.
+        *)
+            exit 0
+        ;;
+    esac
+
