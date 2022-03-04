@@ -65,7 +65,7 @@ myStartupHook = do
     spawnOnce "blueman-applet &"
     spawnOnce "lxpolkit &"
     spawnOnce "/usr/lib/notification-daemon/notification-daemon &"
-    spawnOnce "conky -c $HOME/.config/conky/xmonad/doom-one-01.conkyrc"
+    --spawnOnce "conky -c $HOME/.config/conky/xmonad/doom-one-01.conkyrc"
     spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true --monitor 0 --transparent true --alpha 0 --tint 0x282c34  --height 22 &"
     setWMName "LG3D"
 
@@ -266,7 +266,11 @@ myKeys =
     ("M-S-t", spawn "flatpak run org.telegram.desktop"),
     ------------------------Flameshot--------------------
     ("M-S-p" , spawn "flatpak run org.flameshot.Flameshot"),
+    
+    ------------------------My personal script--------------------
     ("M-S-x" ,spawn "dm-logout"),
+    ("M-s", spawn "selectemojis"),
+
     --------------------- Hardware ---------------------
 
     -- Volume
