@@ -12,11 +12,11 @@ Config {
         Run Date "  %d %b %Y %H:%M " "date" 50,
 
         Run Cpu ["-t", " (<total>%)","-H","50","--high","red"] 150,
-        Run Com "/home/omar/.config/Scripts/battery/alertbattery.sh" [ ] "battery" 50,
-        Run Com "/home/omar/.config/Scripts/weather.sh"[] "weather" 3600,
-        Run Com "/home/omar/.config/Scripts/temp.sh" [] "tempe" 600,
+        Run Com "battery" [ ] "battery" 50,
+        Run Com "weather"[] "weather" 3600,
+        Run Com "temp" [] "tempe" 600,
         Run Com "/home/omar/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 600,
-        Run Com "/home/omar/.config/Scripts/volume.sh" [] "volume" 10,
+        Run Com "volume" [] "volume" 10,
         Run Memory ["-t", "  <used>M (<usedratio>%)"] 150,
         Run Network "wlo1" ["-t", " <rx>kb  <tx>kb"] 150,
         Run UnsafeStdinReader
