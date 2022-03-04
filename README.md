@@ -1,5 +1,6 @@
 # Dotfiles and Configs 🐧
-<img src="https://i.postimg.cc/5N6FNXQv/thumb-1920-108672.gif" width="200" height="200">                                   
+
+<img src="https://i.postimg.cc/5N6FNXQv/thumb-1920-108672.gif" width="200" height="200" >                                   
 
 My dotfiles repo, here you can find all my window manager configs as well as documentation and a guide on how to make your own desktop environment. 
 # Overview 🤖
@@ -9,8 +10,7 @@ This guide will walk you through the process of building a desktop environment s
 # Debian Installation 😜
 Before of the installation of fedora you must run the following commands
 ```
-sudo dnf update -y  && sudo dnf upgrade -y
-sudo dnf install neovim nodejs npm  kitty  zsh ufw figlet tokei exa neofetch htop ranger chromium  rofi openbox nitrogen plank tint2  blueman redshift breeze-cursor-theme tmux volumeicon  @cinnamon-desktop-environment  -y
+sudo apt update -y  && sudo upgrade upgrade -y
 
 ```
 Turn on some services ⚡
