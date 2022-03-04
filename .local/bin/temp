@@ -1,0 +1,5 @@
+
+#!/bin/bash
+
+temp=`sensors | awk '/^temp1/ {print $2}'`
+echo -n "$temp"
