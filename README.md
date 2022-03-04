@@ -1,6 +1,6 @@
 # Dotfiles and Configs 🐧
-
-<img src="https://i.postimg.cc/5N6FNXQv/thumb-1920-108672.gif" width="200" height="200" >                                   
+<img src="screenshots/capturas.png">
+                              
 
 My dotfiles repo, here you can find all my window manager configs as well as documentation and a guide on how to make your own desktop environment. 
 # Overview 🤖
@@ -8,10 +8,42 @@ My dotfiles repo, here you can find all my window manager configs as well as doc
 This guide will walk you through the process of building a desktop environment starting with a fresh Fedora based installation. I will assume that you are comfortable with Linux based operating systems and command line interfaces. Because you are reading this, I will also assume that you've looked through some "tiling window manager" videos on Youtube, because that's where the rabbit hole starts. You can pick any window managers you want, but I'm going to use Gnome to setup for the basic install. This is basically a description of how I made my desktop environment from scratch.
 
 # Debian Installation 😜
-Before of the installation of fedora you must run the following commands
+Before of the installation of debian you must set your repos
+```
+sudo vim /etc/apt/sources.list
+```
+Copy all and paste on the sources.list
+```
+deb http://deb.debian.org/debian/ bullseye main non-free contrib
+deb-src http://deb.debian.org/debian/ bullseye main non-free contrib
+ 
+deb http://security.debian.org/debian-security bullseye-security main contrib non-free
+deb-src http://security.debian.org/debian-security bullseye-security main contrib non-free
+ 
+# bullseye-updates, to get updates before a point release is made;
+# see https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backports
+deb http://deb.debian.org/debian/ bullseye-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ bullseye-updates main contrib non-free
+```
+Now you update your system
 ```
 sudo apt update -y  && sudo upgrade upgrade -y
 
+```
+# Installing XanMod Kernel 🦅
+
+```
+echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list
+wget -qO - https://dl.xanmod.org/gpg.key | sudo apt-key --keyring /etc/apt/trusted.gpg.d/xanmod-kernel.gpg add -
+sudo apt update && sudo apt install linux-xanmod
+```
+## Installing software that I use
+```
+sudo apt install neovim git tmux kitty nodejs npm curl -y
+sudo apt install ufw -y
+sudo apt install figlet  exa neofetch htop ranger  rofi -y
+sudo apt install  nitrogen -y
+sudo apt install alacarte -y
 ```
 Turn on some services ⚡
 
@@ -29,7 +61,7 @@ unzip name_file
 sudo mv *.ttf /usr/share/fonts/
 ```
 ## Kitty 🐱
-[See here my config and Keybindings 🐱](https://github.com/dlowTux/kitty)
+[See here my config and Keybindings 🐱](https://github.com/dlowTux/dotfiles/tree/main/.config/kitty)
 Use my configs for kitty 
 ```
  cd ~/.config 
@@ -67,12 +99,10 @@ git clone https://gitlab.com/dwt1/wallpapers.git
 ```
 
 ## Neovim 👽
-[See here my config and Keybindings](https://github.com/dlowTux/nvim)
+[See here my config and Keybindings](https://github.com/dlowTux/dotfiles/tree/main/.config/nvim)
 Use my configs for Neovim 
 ```
 sudo npm install yarn -g
- cd ~/.config 
-git clone https://github.com/dlowTux/nvim.git
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
  
